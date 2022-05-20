@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyStudyBuddy</string>
+    <string name="country_prompt">Choose Gender</string>
+
+    <string-array name="numbers">
+        <item>Female</item>
+        <item>Male</item>
+
+    </string-array>
+
+</resources>

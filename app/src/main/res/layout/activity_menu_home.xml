@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/home_m"
+        android:title="Home" />
+    <item android:id="@+id/add_m"
+        android:title="Add Module" />
+    <item android:id="@+id/add_q"
+        android:title="Add Question" />
+    <item android:id="@+id/delete_m"
+        android:title="Delete Module" />
+    <item android:id="@+id/delete_q"
+        android:title="Delete Question" />
+</menu>

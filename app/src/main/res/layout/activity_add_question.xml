@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:fillViewport="true"
+    tools:context="com.group21.GRP21.InsertQuestionActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img"
+        android:padding="10dp"
+
+        tools:context="com.group21.GRP21.InsertQuestionActivity">
+
+        <!--    Title of the page using textview-->
+
+        <!--    Adding input fields -->
+
+        <TextView
+            android:id="@+id/home_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Add a question"
+            android:textColor="@android:color/black"
+            android:textSize="35sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/home_text"
+            android:id="@+id/editQuestionLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text_question"
+                android:hint="Type question" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/editQuestionLayout"
+            android:id="@+id/option1Layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text_option1"
+                android:hint="Option 1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/option1Layout"
+            android:id="@+id/option2Layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text_option2"
+                android:hint="Option 2" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/option2Layout"
+            android:id="@+id/option3Layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text_option3"
+                android:hint="Option 3" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--    Adding textview next to dropdown menu-->
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/option3Layout"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="20dp"
+            android:text="Correct Answer :"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="20dp"
+            android:text="Level           :"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b"
+            android:text="Subject              :"
+            android:layout_centerHorizontal="false"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp" />
+
+        <!--    Adding drop down menu-->
+
+        <Spinner
+            android:id="@+id/spinner_answerNr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/option3Layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:id="@+id/spinner_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_answerNr"
+            android:layout_alignStart="@+id/spinner_answerNr"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:id="@+id/spinner_module"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_difficulty"
+            android:layout_alignStart="@+id/spinner_answerNr"
+            android:layout_marginTop="20dp" />
+
+        <!--    Adding a button to Add a question-->
+
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_difficulty"
+            android:layout_marginTop="81dp"
+            android:text="Add" />
+    </RelativeLayout>
+</ScrollView>

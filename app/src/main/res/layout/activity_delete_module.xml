@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image67"
+    android:padding="16dp"
+    tools:context="com.group21.GRP21.DeleteQuestionActivity">
+
+    <!--    Title of the page using textview-->
+
+    <TextView
+        android:id="@+id/titleeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Delete a subject"
+        android:textColor="@android:color/black"
+        android:textSize="35sp" />
+
+    <!--    Adding a spinner to delete module-->
+    <Spinner
+        android:id="@+id/spinner_module"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleeLayout"
+        android:layout_alignStart="@+id/titleeLayout"
+        android:layout_marginTop="50dp" />
+
+    <!--    Adding a button to delete a module-->
+
+    <Button
+        android:id="@+id/button_del_mod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_module"
+        android:layout_alignStart="@+id/spinner_module"
+        android:text="Delete" />
+
+</RelativeLayout>
